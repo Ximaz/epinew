@@ -8,7 +8,7 @@ INSTALL_PATH=/usr/local/bin/$(OUTPUT)
 
 all: install clean
 
-install: build $(OUTPUT) ; mv $(OUTPUT) INSTALL_PATH
+install: build $(OUTPUT) ; mv $(OUTPUT) $(INSTALL_PATH)
 
 uninstall: $(INSTALL_PATH) ; rm -f $(INSTALL_PATH)
 
@@ -18,6 +18,6 @@ new.o: $(SRC) ; $(CC) $(CFLAGS) $(LDFLAGS) -c $(SRC)
 
 main.o: $(ENTRY) ; $(CC) $(CFLAGS) $(LDFLAGS) -c $(ENTRY)
 
-clean: ; rm -rf *.o
+clean: ; rm -f *.o
 
 .PHONY: all install uninstall build clean
