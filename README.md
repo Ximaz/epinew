@@ -50,10 +50,10 @@ make uninstall
 ```
 
 # Roadmap
-[x] C source files
-[x] C program files
-[x] H header files
-[ ] Makefile files
+- [x] C source files
+- [x] C program files
+- [x] H header files
+- [ ] Makefile files
 
 # Contributing
 Feel free to either open a pull request if you have an idea to improve the project or an issue if you're running through a problem.
